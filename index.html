@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,8 @@
   <meta name="description" content="Yuenian Zhou — Ph.D. student at Universität Regensburg (SFB 1085 Higher Invariants). Interests: algebraic geometry, number theory, ℓ-adic local systems, ℓ-independence, Fontaine–Mazur and Simpson’s motivicity." />
   <link rel="canonical" href="https://yuenianzhou.github.io/personal-website/" />
 
-  <!-- Fonts: Hajdhani for body, Dancing Script for section title -->
-  <link href="https://fonts.googleapis.com/css2?family=Hajdhani:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- Fonts: Lora for body, Dancing Script for section titles -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Yuenian Zhou – Homepage" />
@@ -33,41 +34,37 @@
 
   <style>
     :root{
-      --max: 1100px;          /* ⬅︎ 内容区域更宽 */
-      --accent: #a7831c;
-      --ink: #1f2937;
-      --muted: #6b7280;
-      --card-bg: #ffffff;
+      --max: 1280px;          /* 页面更宽 */
+      --ink: #111;            /* 全黑文字 */
       --border: #e5e7eb;
+      --card-bg: #fff;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: "Hajdhani", Georgia, "Times New Roman", serif; /* ⬅︎ 主体字体 */
-      font-size: 16.5px;      /* ⬅︎ 字号更小 */
-      line-height: 1.85;
-      color: var(--ink);
+      font-family:"Lora", Georgia, "Times New Roman", serif;
+      font-size:16.5px;
+      line-height:1.9;
+      color:var(--ink);
       background:#fafafa;
     }
-    header{background:#fff;border-bottom:1px solid var(--border)}
     .wrap{max-width:var(--max);margin:0 auto;padding:26px 28px}
-    h1{
-      margin:.1rem 0 .5rem;
-      font-size: 1.75rem;     /* 标题略小 */
-      font-weight:600;
-      letter-spacing:.2px;
-    }
+    header{background:#fff;border-bottom:1px solid var(--border)}
+    h1{margin:.1rem 0 .5rem;font-size:1.75rem;font-weight:600;letter-spacing:.2px}
+    .meta{color:#111}
+    /* 链接：黑色+下划线 */
+    a{color:#111;text-decoration:underline;text-underline-offset:2px}
+    a:hover{text-decoration:underline}
+    /* 简单导航（文字链接） */
+    nav a{margin-right:18px}
+    /* 小节标题用手写体 */
     h2.section-title{
       font-family:"Dancing Script", cursive;
-      font-size: 40px;        /* 小一点 */
+      font-size:40px;
       font-weight:700;
-      margin: 6px 0 8px;
-      color:#3b3b3b;
+      margin:10px 0 8px;
+      color:#111;
     }
-    p{margin:.45rem 0 .85rem}
-    a{color: var(--accent);text-decoration: none;font-weight:600}
-    a:hover{text-decoration:underline}
-    .meta{color:#374151}
     .card{
       background:var(--card-bg);
       border:1px solid var(--border);
@@ -76,9 +73,9 @@
       margin-top:16px;
       box-shadow:0 2px 6px rgba(0,0,0,.04);
     }
-    ul{padding-left:1.1rem;margin:.25rem 0}
-    li{margin:.2rem 0}
-    footer{color:var(--muted);font-size:.92rem;margin:2rem 0 1rem;text-align:center}
+    ul{padding-left:1.1rem;margin:.3rem 0}
+    li{margin:.25rem 0}
+    footer{color:#111;font-size:.92rem;margin:2rem 0 1rem;text-align:center}
   </style>
 </head>
 <body>
@@ -88,6 +85,13 @@
       <p class="meta">Universität Regensburg · SFB 1085 “Higher Invariants” · Ph.D. student</p>
     </div>
   </header>
+
+  <!-- 如果你有分页面，这里是纯文字下划线链接的导航 -->
+  <nav class="wrap">
+    <a href="index.html">Homepage</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html">Research</a>
+  </nav>
 
   <main class="wrap">
     <section class="card">

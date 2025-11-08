@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Yuenian Zhou – Homepage</title>
-  <meta name="description" content="Yuenian Zhou — Ph.D. student at Universität Regensburg (SFB 1085 Higher Invariants). Interests: algebraic geometry, number theory, ℓ-adic local systems, ℓ-independence, Fontaine–Mazur and Simpson’s conjectures." />
+  <meta name="description" content="Yuenian Zhou — Ph.D. student at Universität Regensburg (SFB 1085 Higher Invariants). Interests: algebraic geometry, number theory, ℓ-adic local systems, ℓ-independence, Fontaine–Mazur and Simpson’s motivicity." />
   <link rel="canonical" href="https://yuenianzhou.github.io/personal-website/" />
 
-  <!-- Open Graph for better sharing -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Yuenian Zhou – Homepage" />
   <meta property="og:description" content="Ph.D. student at Universität Regensburg (SFB 1085 Higher Invariants). Algebraic geometry & number theory." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yuenianzhou.github.io/personal-website/" />
 
-  <!-- (可选) 如果你用 HTML 标签方式验证 Google，就把下面注释取消并把 content 换成你的验证码 -->
-  <!-- <meta name="google-site-verification" content="PUT-YOUR-CODE-HERE" /> -->
-
-  <!-- Structured data: Person -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,62 +32,88 @@
   </script>
 
   <style>
-    :root { --max: 860px; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      line-height: 1.6; color: #1f2937; background: #fafafa;
+    :root{
+      --max: 860px;
+      --accent: #a7831c; /* 柔和的金色 */
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
     }
-    header {
-      border-bottom: 1px solid #e5e7eb; background: #fff;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Lora", Georgia, "Times New Roman", serif;  /* 正文字体 */
+      font-size: 19px;
+      line-height: 1.9;
+      color: var(--ink);
+      background:#fafafa;
     }
-    .wrap {
-      max-width: var(--max); margin: 0 auto; padding: 1.25rem;
+    header{background:#fff;border-bottom:1px solid var(--border)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:22px}
+    h1{
+      margin: .2rem 0 .6rem;
+      font-weight:600;
+      letter-spacing:.2px;
     }
-    h1 { font-size: 1.9rem; margin: 0.2rem 0 0.6rem; }
-    h2 { margin-top: 2rem; font-size: 1.35rem; }
-    p { margin: 0.5rem 0 0.8rem; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .card {
-      background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 1rem 1.25rem; margin-top: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    h2.section-title{
+      font-family:"Dancing Script", cursive;  /* 标题手写体 */
+      font-size: 46px;
+      font-weight:700;
+      margin: 12px 0 10px;
+      color:#3b3b3b;
     }
-    ul { padding-left: 1.1rem; }
-    li { margin: 0.25rem 0; }
-    footer { color: #6b7280; font-size: 0.9rem; margin: 2rem 0 1rem; text-align: center; }
-    .meta { color: #374151; }
+    p{margin:.5rem 0 .9rem}
+    a{
+      color: var(--accent);
+      text-decoration: none;
+      font-weight:600;
+    }
+    a:hover{text-decoration:underline}
+    .meta{color:#374151}
+    .card{
+      background:var(--card-bg);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:16px 20px;
+      margin-top:16px;
+      box-shadow:0 2px 6px rgba(0,0,0,.04);
+    }
+    ul{padding-left:1.1rem;margin:.3rem 0}
+    li{margin:.25rem 0}
+    footer{color:var(--muted);font-size:.92rem;margin:2rem 0 1rem;text-align:center}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Yuenian Zhou's Homepage</h1>
+      <h1>Yuenian Zhou’s Homepage</h1>
       <p class="meta">Universität Regensburg · SFB 1085 “Higher Invariants” · Ph.D. student</p>
     </div>
   </header>
 
   <main class="wrap">
     <section class="card">
-      <h2>About me</h2>
+      <h2 class="section-title">About me</h2>
       <p>
-        I am a Ph.D. student and an associated member of SFB 1085 “Higher Invariants” at
-        Universität Regensburg (Germany) since 2024, supervised by Prof. Moritz Kerz.
+        I am a Ph.D. student and an associated member of
+        <a href="https://www.sfb1085.uni-regensburg.de/" target="_blank" rel="noopener">SFB 1085 “higher invariants”</a>
+        at <a href="https://www.uni-regensburg.de/" target="_blank" rel="noopener">Universität Regensburg</a> (Germany) since 2024, supervised by
+        <a href="https://moritz-kerz.github.io/" target="_blank" rel="noopener">Prof. Moritz Kerz</a>.
       </p>
       <p>
-        Previously, I completed my master's studies at Université Paris-Saclay (Paris-Sud), program AAG
+        Previously, I completed my master's studies at the
+        <a href="https://www.universite-paris-saclay.fr/" target="_blank" rel="noopener">Université Paris-Saclay (Paris Sud)</a> AAG
         (Analysis, Arithmetic, Geometry). Before that, I obtained my bachelor's degree in mathematics at
-        Zhejiang University in China.
+        <a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">Zhejiang University</a> in China.
       </p>
       <p>
-        My interests are algebraic geometry and number theory (with a geometric flavor), particularly
-        topics related to ℓ-adic local systems, ℓ-independence, the Fontaine–Mazur conjecture, and
-        Simpson's motivicity conjecture.
+        My study interests are algebraic geometry and number theory (with a flavor of geometry), particularly topics related to
+        ℓ-adic local systems, ℓ-independence, the Fontaine–Mazur conjecture and Simpson's motivicity conjecture.
       </p>
       <p>
         Currently, I am trying to understand local systems over mixed characteristic local fields,
-        in particular arithmetic properties of local systems over deformations of stable curves
-        in the Deligne–Mumford stack.
+        in particular arithmetic properties of local systems over deformations of stable curves in the Deligne–Mumford stack.
       </p>
 
       <p><strong>Email:</strong> <a href="mailto:yuenian.zhou@mathematik.uni-regensburg.de">yuenian.zhou@mathematik.uni-regensburg.de</a></p>
@@ -95,7 +121,7 @@
     </section>
 
     <section class="card">
-      <h2>Conferences attended</h2>
+      <h2 class="section-title">Conferences attended</h2>
       <ul>
         <li>Xi'an Jiaotong University Summer School of Number Theory, <em>2021</em>, Xi'an.</li>
         <li>IHES Summer School — Recent Advances in Algebraic K-theory, <em>2023</em>, Paris.</li>
@@ -111,7 +137,7 @@
     </section>
 
     <section class="card">
-      <h2>Conferences to attend</h2>
+      <h2 class="section-title">Conferences to attend</h2>
       <ul>
         <li>60th Birthday Conference for Alexander Schmid, <em>Mar 9–13, 2026</em>, Heidelberg.</li>
         <li>New developments in p-adic representation theory, <em>Mar 18–20, 2026</em>, Essen.</li>
@@ -125,8 +151,8 @@
   </main>
 
   <script>
-    // show last updated date (client side)
     document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
   </script>
 </body>
 </html>
+
